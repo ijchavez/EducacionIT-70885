@@ -8,7 +8,8 @@ import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
+import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
 
@@ -23,6 +24,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chromium.ChromiumDriver;
+import org.openqa.selenium.devtools.DevTools;
+import org.openqa.selenium.devtools.HasDevTools;
 
 
 public class Utilities {
@@ -117,5 +121,27 @@ public class Utilities {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		return DriverManager.getConnection(dbUrl,username,password);
 		
+	}
+	public static void setCoordinates(WebDriver driver, Object latitude, Object longitude) {
+		Map<String, Object> coordenadas = new HashMap<>();
+		coordenadas.put("latitude", latitude);
+		coordenadas.put("longitude", longitude);
+		coordenadas.put("accuracy", 1);
+		
+		((ChromiumDriver) driver).executeCdpCommand("Emulation.setGeolocationOverride", coordenadas);
+	}
+	public static void devToolsCreateSession(WebDriver driver ) {
+		DevTools devTools = ((HasDevTools) driver).getDevTools();
+		devTools.createSession();
+		
+	}
+	public static void setMobileMetrics(WebDriver driver, Object width, Object height) {
+		Map<String, Object> deviceMetrics = new HashMap<>();
+        deviceMetrics.put("width", width);
+        deviceMetrics.put("height", height);
+        deviceMetrics.put("mobile", true);
+        deviceMetrics.put("deviceScaleFactor", 50);
+        
+        ((ChromiumDriver) driver).executeCdpCommand("Emulation.setDeviceMetricsOverride", deviceMetrics);
 	}
 }

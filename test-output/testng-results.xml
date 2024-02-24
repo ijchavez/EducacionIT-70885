@@ -1,55 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-24T10:39:22 ART" name="Suite" finished-at="2024-02-24T10:39:45 ART" duration-ms="22778">
+  <suite started-at="2024-02-24T12:41:05 ART" name="Default suite" finished-at="2024-02-24T12:41:11 ART" duration-ms="5401">
     <groups>
     </groups>
-    <test started-at="2024-02-24T10:39:22 ART" name="Search Item firefox" finished-at="2024-02-24T10:39:36 ART" duration-ms="14039">
-      <class name="clase4.CrossBrowserTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:clase4.CrossBrowserTest@55141def]" started-at="2024-02-24T10:39:22 ART" name="setUp" finished-at="2024-02-24T10:39:33 ART" duration-ms="11484" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2024-02-24T12:41:05 ART" name="Default test" finished-at="2024-02-24T12:41:11 ART" duration-ms="5401">
+      <class name="clase6.CambiosSeleniumMobile">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:clase6.CambiosSeleniumMobile@72967906]" started-at="2024-02-24T12:41:06 ART" name="setUp" finished-at="2024-02-24T12:41:09 ART" duration-ms="3815" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchItem()[pri:0, instance:clase4.CrossBrowserTest@55141def]" started-at="2024-02-24T10:39:33 ART" name="searchItem" finished-at="2024-02-24T10:39:35 ART" duration-ms="1303" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:clase6.CambiosSeleniumMobile@72967906]" started-at="2024-02-24T12:41:09 ART" name="loginTest" finished-at="2024-02-24T12:41:11 ART" duration-ms="1371" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:clase4.CrossBrowserTest@55141def]" started-at="2024-02-24T10:39:35 ART" name="tearDown" finished-at="2024-02-24T10:39:36 ART" duration-ms="1209" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- clase4.CrossBrowserTest -->
-    </test> <!-- Search Item firefox -->
-    <test started-at="2024-02-24T10:39:36 ART" name="Search Item chrome" finished-at="2024-02-24T10:39:45 ART" duration-ms="8672">
-      <class name="clase4.CrossBrowserTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:clase4.CrossBrowserTest@4c12331b]" started-at="2024-02-24T10:39:36 ART" name="setUp" finished-at="2024-02-24T10:39:43 ART" duration-ms="7298" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="searchItem()[pri:0, instance:clase4.CrossBrowserTest@4c12331b]" started-at="2024-02-24T10:39:43 ART" name="searchItem" finished-at="2024-02-24T10:39:45 ART" duration-ms="1299" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:clase4.CrossBrowserTest@4c12331b]" started-at="2024-02-24T10:39:45 ART" name="tearDown" finished-at="2024-02-24T10:39:45 ART" duration-ms="72" status="PASS">
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:clase6.CambiosSeleniumMobile@72967906]" started-at="2024-02-24T12:41:11 ART" name="tearDown" finished-at="2024-02-24T12:41:11 ART" duration-ms="165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- clase4.CrossBrowserTest -->
-    </test> <!-- Search Item chrome -->
-  </suite> <!-- Suite -->
+      </class> <!-- clase6.CambiosSeleniumMobile -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
