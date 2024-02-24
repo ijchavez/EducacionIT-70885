@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Search Item firefox(failed)">
+    <parameter name="navegador" value="firefox"/>
+    <classes>
+      <class name="clase4.CrossBrowserTesting">
+        <methods>
+          <include name="tearDown"/>
+          <include name="searchItem"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- clase4.CrossBrowserTesting -->
+    </classes>
+  </test> <!-- Search Item firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
